@@ -1,0 +1,40 @@
+{
+  "name": "react-native-code-scanner",
+  "version": "1.0.0",
+  "description": "react-native-code-scanner is a powerful and flexible library for scanning barcodes and QR codes in React Native applications.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zvukamar/react-native-code-scanner.git"
+  },
+  "keywords": [
+    "react-native",
+    "code-scanner",
+    "barcode-scanner",
+    "scanner",
+    "qr-scanner",
+    "native-modules",
+    "ios",
+    "android",
+    "vision-camera"
+  ],
+  "author": "Alex",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Zvukamar/react-native-code-scanner/issues"
+  },
+  "homepage": "https://github.com/Zvukamar/react-native-code-scanner#readme",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.5"
+  }
+}
