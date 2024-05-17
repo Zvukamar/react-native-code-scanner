@@ -10,8 +10,7 @@
     "lib",
     "!**/__tests__",
     "!**/__fixtures__",
-    "!**/__mocks__",
-    "dist"
+    "!**/__mocks__"
   ],
   "scripts": {
     "prepare": "bob build"
