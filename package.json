@@ -1,6 +1,6 @@
 {
   "name": "react-native-code-scanner",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "react-native-code-scanner is a powerful and flexible library for scanning barcodes and QR codes in React Native applications.",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",
