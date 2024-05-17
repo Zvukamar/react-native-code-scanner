@@ -1,6 +1,6 @@
 {
   "name": "react-native-code-scanner",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "react-native-code-scanner is a powerful and flexible library for scanning barcodes and QR codes in React Native applications.",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",
@@ -43,10 +43,10 @@
     "typescript": "^5.4.5"
   },
   "peerDependencies": {
-    "@mgcrea/vision-camera-barcode-scanner": "^0.11.2",
+    "@mgcrea/vision-camera-barcode-scanner": "^0.10.1",
     "react": "*",
     "react-native": "*",
-    "react-native-vision-camera": "^4.0.4",
+    "react-native-vision-camera": "^3.9.2",
     "react-native-worklets-core": "^1.3.3"
   },
   "react-native": "src/index.ts",
