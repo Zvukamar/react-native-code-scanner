@@ -1,15 +1,20 @@
 {
   "name": "react-native-code-scanner",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "react-native-code-scanner is a powerful and flexible library for scanning barcodes and QR codes in React Native applications.",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
+  "main": "lib/commonjs/index.js",
+  "module": "lib/module/index.js",
+  "types": "lib/typescript/index.d.ts",
   "files": [
+    "src",
+    "lib",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__",
     "dist"
   ],
   "scripts": {
-    "build": ""
+    "prepare": "bob build"
   },
   "repository": {
     "type": "git",
@@ -34,6 +39,7 @@
   "homepage": "https://github.com/Zvukamar/react-native-code-scanner#readme",
   "devDependencies": {
     "@types/react": "^18.3.2",
+    "react-native-builder-bob": "^0.23.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5"
   },
@@ -43,5 +49,20 @@
     "react-native": "*",
     "react-native-vision-camera": "^4.0.4",
     "react-native-worklets-core": "^1.3.3"
-  }
+  },
+  "react-native": "src/index.ts",
+  "source": "src/index.ts",
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      "typescript"
+    ]
+  },
+  "eslintIgnore": [
+    "node_modules/",
+    "lib/"
+  ]
 }
