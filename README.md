@@ -17,6 +17,21 @@ Or [here](https://github.com/mrousavy/react-native-vision-camera).
 2.<br/>
 `npx pod-install`
 
+3.<br/>
+### iOS
+To use the Camera you must first specify that your app requires camera permissions. <br/>
+Open your project's `Info.plist` and add the following lines inside the outermost `<dict>` tag:
+
+```
+<key>NSCameraUsageDescription</key>
+<string>$(PRODUCT_NAME) needs access to your Camera.</string>
+```
+### Android
+```
+<uses-permission android:name="android.permission.CAMERA" />
+```
+
+
 ## Usage
 Importing the Scanner Component</br>
 ```
