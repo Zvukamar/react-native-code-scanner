@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { Platform, StyleSheet, View } from 'react-native';
 import { AndroidBarcode, BarcodeType, iOSBarcode, useBarcodeScanner } from '@mgcrea/vision-camera-barcode-scanner';
 import { Camera, useCameraDevice, useCameraPermission } from 'react-native-vision-camera';
@@ -10,10 +10,9 @@ import { iOSresultInCenter } from './utils/helpers';
 interface BarcodeScannerProps {
     onScan: (barcode: string) => void;
     barcodeTypes?: BarcodeType[];
-    showOverlay?: boolean;
 }
 
-const BarcodeScanner = ({ onScan, showOverlay, barcodeTypes = DEFAULT_BARCODE_TYPES }: BarcodeScannerProps) => {
+const BarcodeScanner = ({ onScan, barcodeTypes = DEFAULT_BARCODE_TYPES }: BarcodeScannerProps) => {
     const device = useCameraDevice('back');
     const { hasPermission, requestPermission } = useCameraPermission();
 
@@ -59,7 +58,7 @@ const BarcodeScanner = ({ onScan, showOverlay, barcodeTypes = DEFAULT_BARCODE_TY
                     {...cameraProps}
                 />
             )}
-            {showOverlay && <Overlay />}
+            <Overlay />
         </View>
     )
 }

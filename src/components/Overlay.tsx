@@ -1,3 +1,4 @@
+import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { HORIZONTAL_PERCENTAGE_MARGIN, SCREEN_HEIGHT, VERTICAL_PERCENTAGE_MARGIN } from '../utils/consts';
 
