@@ -60,14 +60,16 @@ import { CodeScanner } from 'react-native-code-scanner';
 ## Example Usage
 ```
 <CodeScanner
-  onReadCode={(barcode: string) => {
+  barcodeTypes=['aztec' , 'codabar' , 'code-128' , 'code-39' , 'code-93' , 'data-matrix' , 'ean-13' , 'ean-8' , 'gs1-databar' , 'itf' , 'msi-plessey' , 'pdf-417' , 'qr' , 'upc-a' , 'upc-e']
+  onScan={(barcode: string) => {
     console.log(barcode);
   }}
 />
 ```
 
 ## Props
-onReadCode: Callback function triggered when a code is successfully scanned.
+  onScan: (barcode: string) => void;<br/>
+  barcodeTypes?: BarcodeType[];
 
 ## Contributing
 Contributions are welcome! If you find any issues or want to suggest improvements, feel free to open an issue or submit a pull request in the GitHub repository.
